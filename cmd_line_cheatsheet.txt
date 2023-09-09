@@ -1,0 +1,79 @@
+date
+cal
+man
+--help
+whatis
+apropos
+pwd --> print working directory
+cd --> change directory
+cd --> go to home directory
+cd - --> go to previous directory
+ls --> listfiles
+ls -l --> list files and directories with more info
+cat --> (catalogue) shows contents of file
+less --> show contents of file more user friendly
+ln --> creates links
+chmod --> change user permissions
+id --> user info (user groups, etc)
+chgrp --> change group of file
+which
+whereis
+find --> used to find files
+locate --> uses database to find files (faster but only updated once a day)
+file --> gives a description of a file type
+grep --> searching within files
+cp --> copying files and directories
+mv --> move file or directory, also renaming files
+rm --> removing files
+rm -R --> removes files recursively. very powerfull but also dangerous (can be used on nonempty directories)
+cp,mc, rm --> use -i for always ask for confirmation for overwriting or removing, -f for never asking
+mkdir --> making new directories
+rmdir --> removing empty directories
+nano --> text editor
+> --> used to write standard output (of a function) to a file
+>> --> used to append standard output (of a function) to a file
+>& --> output standard error to file
+>>& --> append standard error to file
+wc --> print newline, word, and byte counts for each FILE
+| --> used to pipe output of a function into the input of another function
+`` --> use backticks (~ key) to pass an ARGUMENT to a function
+; --> execute multiple commands in one line
+() --> group multiple commands
+hisotory --> shows history of executed commands
+!! --> execute last executed commands
+!13 --> execute command on line 13
+ctr-R --> search in history
+$* --> place holders for arguments of bash scripts
+alias name='command' --> create a new (short) name for an existing command
+alias --> shows all active aliases
+unalias --> remove active aliases
+HOME --> valiable with home directory
+PATH --> variable with search path for shell to find commands
+TERM --> shows terminal type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

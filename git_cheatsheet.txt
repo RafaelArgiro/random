@@ -1,0 +1,46 @@
+GIT
+
+git commit 												--> 	creates a new commit on the current (HEAD) branch
+git commit --amend 										--> 	making a new commit next to the current commit instead of after it.
+
+git checkout <location>									--> 	moves HEAD (HEAD = the current working branch or commit) to specified location branchName, commitHash, or a relative path from either. (remember: branches just point to commits!)
+git checkout <tagName>									--> 	moves HEAD to commit tagged with <tagName>. Note git goes into detached HEAD mode, as you cant commit onto tags!
+git checkout -b <branchName> 							--> 	creates new branch and checks out branch at the same time
+git checkout <branchName^> 								--> 	move up the branching tree from the branch <branchName>. Number of ^signs = number of commits you move up.
+git checkout <HEAD^> 									--> 	move up the branching tree from the current HEAD position (relative move). Number of ^signs = number of commits you move up.
+
+
+git branch <branchName>									-->		creates a new branch at current location/commit
+git branch <branchName> <location> 						--> 	creates a new branch at specified location. location can be a branchName, commitHash, or a relative path from either.
+git branch -f <branch name> <location> 					--> 	force move the specified branch to the specified location (branchName, commitHash, or relative path from either).
+
+git merge <branchName> 									--> 	creates a new commit that points to 2 branches. this merges the unique branches into a single commit
+																note: git merge <branchName> merges the branch <branchName> into the currenly checked out branch.
+
+git cherry-pick <commit 1> <commit 2> ... 				--> 	moves all specified commit under the HEAD. commits are pasted under head in specified order. commits that are already in the history of the current HEAD, cannot be included!
+
+git rebase <branchName> 								--> 	rebases the currently checked-out branch (HEAD) onto the specified one <branchName> and moves the checkout-out along with it.
+git rebase <target> <branchName>						-->		rebases the commits under branchName into the target commit. <target> = anytihng that can be resolved to a commit (branchName, commitHash, relative path, etc.)
+git rebase -i <target> 									--> 	opens an interactive GUI (textfile) to move, omit all desired commits it the desired order onto the target location (branchName, commitHash, or relative location from either)
+
+git reset <commitHash / location> 						--> moves the branch reference backward to the specified commit / location (either by commitHash, branchName, or by relative path from either), causing the "lost" commit to be like it never happened. good when working alone/locally.
+git revert <commitHash / location>						--> creates a new commit that exactly reverts the changes of the specified commit (either by commitHash, branchName, or by relative path from either). good for when working with remote branches.
+
+git tag <name> <location> 								--> gives a "permanent" tag to a specific commit (location = commitHash, branchName, or relative path from either)
+git describe <reference> 								--> gives the nearest tag, number of commits and the hash of the checked-out commit. <reference> = anytihng that can be resolved to a commit (branchName, commitHash, relative path, etc.)
+
+git clone --> copy remote repositories to local machine
+
+git fetch --> downloads commits from remote repo to local repo, updates remote branch pointer
+
+git pull --> fetches a branch and then merges it. 
+git pull --rebase --> pulls and then rebases the work on your local repo to make it ready for pushing
+
+git push --> pushes your local commit to the remote repo and updates your local repo to be in sinc with the remote one
+
+
+
+
+
+
+
