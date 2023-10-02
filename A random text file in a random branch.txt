@@ -1,3 +1,7 @@
 A random text file in a random branch
 
 Add some extra text into this random file.
+
+Just one more line. Because it is fun.
+
+Maybe this line will be the last one. Who knows?
